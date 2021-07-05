@@ -1,0 +1,208 @@
+{% load static%}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabajos Realizados</title>
+  {%bootstrap_css %}
+  <link rel="stylesheet" href="{% static 'core/css/trabajos_realizados.css' %}">
+</head>
+<body>
+    <div class="row">
+        <header class="col ">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'registrousuario' %}">Registrate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'iniciosesion' %}">Iniciar Sesion</a>
+                </li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- Logo -->
+    <div class="row">
+        <div class="col-3" id="logo">
+            <img id="logo" src="{% static 'core/img/Gnu.png' %}" alt="Error...">
+        </div>
+
+        <!-- menu -->
+        <div class="col-6" id="menu">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'index' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'trabajos_realizados' %}">trabajos Realizados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Nuestrosmecanicos' %}">Nuestros mecanicos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Boton buscar -->
+    <div class="row">
+        <div class="col-12">
+            <nav id="buscar" class="nav justify-content-center">
+                <form class="d-flex flex-column bd-highlight mb-3" action="/action_page.php">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Ingrese nro de orden">
+                    <button class="btn btn-success" type="submit">Buscar</button>
+                </form>
+            </nav>
+        </div>
+    </div>
+<br>    
+    <!-- Trabajos -->
+<main>  
+<div class="linea">
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Orden #0045621</h5>
+                </div>
+                <div class="col"><img src="{% static 'core/img/Peugeot' %}" class="img-thumbnail" alt="..."></div>
+                <br>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Marca: Peugeot</li>
+                    <li class="list-group-item">Mecanico a cargo: Fernando Sanchez.</li>
+                    <li class="list-group-item">Procedimiento: Cambio de frenos.</li>
+                    <li class="list-group-item">Vuelve: No </li>
+                  </ul>
+            </div>
+
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Orden #0045621</h5>
+                </div>
+                <div class="col"><img src="{% static 'core/img/Subaru' %}" class="img-thumbnail" alt="..."></div>
+                <br>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Marca: Chevrolet</li>
+                    <li class="list-group-item">Mecanico a cargo: Fernanda Camus.</li>
+                    <li class="list-group-item">Procedimiento: Cambio de Motor y ajustes de bujias.</li>
+                    <li class="list-group-item">Vuelve: No</li>
+                </ul> 
+            </div>
+            <br>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Orden #0045621</h5>
+                </div>
+                <div class="col"><img src="{% static 'core/img/Subaru' %}" class="img-thumbnail" alt="..."></div>
+                <br>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Marca: Subaru</li>
+                    <li class="list-group-item">Mecanico acargo: Sebastian Rojas</li>
+                    <li class="list-group-item">Cambio de bateria y ajustes en el motor.</li>
+                    <li class="list-group-item">Vuelve: No </li>
+                  </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="linea">
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Orden #0045621</h5>
+                </div>
+                <div class="col"><img src="{% static 'core/img/Audi' %}" class="img-thumbnail" alt="..."></div>
+                <br>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Marca: Audi</li>
+                    <li class="list-group-item">Mecanico a cargo: Sebastian Rojas</li>
+                    <li class="list-group-item">Procedimiento: Cambio de batetría y ajustes en el motor.</li>
+                    <li class="list-group-item">Vuelve: No </li>
+                  </ul>
+            </div>
+
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Orden #0045621</h5>
+                </div>
+                <div class="col"><img src="{% static 'core/img/BMW' %}" class="img-thumbnail" alt="..."></div>
+                <br>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Marca: BMW</li>
+                    <li class="list-group-item">Mecanico a cargo: Fernanda Camus</li>
+                    <li class="list-group-item">Procedimiento: Revision de luces</li>
+                    <li class="list-group-item">Vuelve: No</li>
+                </ul> 
+                </div>
+                <br>
+            </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Orden #0045621</h5>
+                </div>
+                <div class="col"><img src="{% static 'core/img/Porsche' %}" class="img-thumbnail" alt="..."></div>
+                <br>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Marca: Porsche</li>
+                    <li class="list-group-item">Mecanico acargo: Fernando Sanchez</li>
+                    <li class="list-group-item">Cambio de aceite</li>
+                    <li class="list-group-item">Vuelve: No </li>
+                  </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</main>  
+
+
+<!-- footer -->
+    <footer>
+        <div class="row">
+            <div class="col-3" id="bott-1">
+                <h2 class="contacto">
+                    Contactanos:</h2>
+                <div class="contacto">
+                    <p>Correo: asdajhd@gmail.com</p>
+                    <p>Ubicacion: Av.Cualquiera #856</p>
+                    <p>Whatsapp: +56956594565</p>
+                </div>
+
+            </div>
+
+            <div class="col-6" id="bott-2">
+                <h3>Quienes Somos:</h3>
+                <p class="quienes">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur placeat maxime delectus a porro
+                    provident sint alias? Veniam magnam dolore repellat tempora delectus excepturi est ut itaque? Ex,
+                    placeat labore?
+                    Quasi minima commodi, quam quia suscipit explicabo, ipsa accusantium quaerat eligendi saepe
+                    laboriosam cupiditate eius a sed exercitationem autem? Fuga, cumque. Et culpa voluptates eum ipsum
+                    dolores corporis, sapiente deserunt!
+                    Laborum praesentium quaerat totam blanditiis numquam vel, earum atque qui expedita fugiat illo, modi
+                    illum dignissimos, ipsum doloremque nulla omnis repudiandae alias dolorum nemo repellendus dolores
+                    laudantium. Deleniti, eveniet aliquid.</p>
+            </div>
+            <div class="col-3" id="bott-3">
+                <img src="{% static 'core/img/Gnu.png' %}" alt="Error...">
+            </div>
+        </div>
+    </footer>
+    {% bootstrap_javascript jquery='full' %}
+</body>
+</html>

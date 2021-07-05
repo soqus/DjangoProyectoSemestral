@@ -1,8 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 /* incio Header*/
 body{
@@ -58,26 +54,19 @@ li a:hover{
 #menu{
     padding: 2% 5% 2% 5%;
 }
-/*carrusel*/
 
-#carrusel{
-    padding-top: 1%;
-    padding-bottom: 3%;
+
+/* Trabajar aquí */
+
+
+article{
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 243px;
 }
 
-/*Barra buscar*/
-#buscar{
-    padding-top: 3%;
-}
 
 
-
-/* Trabajar aqui */
-
-
-
-
-/*footer*/
 
 /*footer*/
 

@@ -2,10 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-/* incio Header*/
-body{
+  }
+  
+  /* incio Header*/
+  body{
     background-color: #DCE2F2;
 }
 
@@ -40,52 +40,42 @@ li a:hover{
     color: black;
     background-color: #F2F2F2;
 }
-
-
-    
-
 /*Fin header*/
-
-/*Inicio menu*/
-#logo{
+  
+  /*Inicio menu*/
+  #logo{
     border-radius: 50%;
     float: left;
     justify-content: left;
     padding-top: 2px;
     padding-bottom: 2px;
-}
-
-#menu{
+  }
+  
+  #menu{
     padding: 2% 5% 2% 5%;
-}
-/*carrusel*/
+  }
+  
+  /* Fin menu */
 
-#carrusel{
-    padding-top: 1%;
-    padding-bottom: 3%;
-}
 
-/*Barra buscar*/
-#buscar{
-    padding-top: 3%;
+main{
+      padding-left: 290px;
+      padding-bottom: 30px;
+      margin-right: 100px;
 }
 
 
 
-/* Trabajar aqui */
 
 
 
+  /*footer*/
 
-/*footer*/
-
-/*footer*/
-
-footer{
+  footer{
     background-color: black;
     color: white;
-    height: 270px;
-    
+    height: 229px;
+    margin:0 auto;
     
 }
 .contacto{
@@ -108,7 +98,7 @@ div #bott-2{
 }
 
 div #bott-3{
-    border-radius: 50%;
+    border-radius: 40%;
     float: right;
     padding-left: 200px;
     padding-top: 50px;

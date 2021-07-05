@@ -1,0 +1,118 @@
+{% load static%}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha tecnica</title>
+  {%bootstrap_css %}
+  <link rel="stylesheet" href="{% static 'core/css/fichaTecnica.css' %}">
+</head>
+<body>
+    <!-- Menu de incio sesion -->
+      <div class="raw">
+        <header class="col ">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'registrousuario' %}">Registrate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'inciosesion' %}">Iniciar Sesion</a>
+            </li>
+          </ul>
+        </header>
+      </div>
+    <!-- Logo -->
+    <div class="raw">
+      <div class="col-3" id="logo">
+        <img src="{% static 'core/img/Gnu.png' %}" alt="Error...">
+      </div>
+      <div class="col-9" id="menu">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'index' %}">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'trabajos_realizados' %}">trabajos Realizados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'Nuestrosmecanicos' %}">Nuestros mecanicos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- formulario -->
+    <main>
+        <!-- background -->
+      <article>
+        <h1>Ficha Tecnica</h1>
+        <div class="form-group">
+            <label for="Datos">Datos cliente:</label>
+           <input type="email" class="form-control" id="Datos">
+      </div>  
+      <div class="form-group">
+           <label for="Diagnostico">Diagnostico:</label>
+           <input type="email" class="form-control" id="Diagnostico">
+      </div>  
+      <label for="mec_cargo">Mecánico a cargo: </label>
+      <select name="combo" id="mec_cargo">
+        <option value="1" selected>--Mecánicos--</option>
+        <option value="2">Sebastian Rojas</option>
+        <option value="3">Fernanda Camus</option>
+        <option value="4">Fernando Sanchez</option>
+      </select>
+    <div class="form-group">
+           <label for="Materiales">Materiales utilizados:</label>
+           <textarea class="form-control" id="Materiales" rows="3"></textarea>
+        </div>
+    <div class="form-group">
+           <label for="Comentarios">Comentarios:</label>
+           <textarea class="form-control" id="Comentarios" rows="3"></textarea>
+        </div>
+      <div class="form-group">
+           <label for="Fecha">Fecha:</label>
+           <input type="date" class="form-control" id="Fecha">
+        </div>
+      </div>
+    <form>
+        <div class="form-row">
+           <label for="archivo">Adjuntar archivo</label>
+           <input type="file" class="form-control-file" id="archivo">
+        </div>
+    </form>
+    <a class="btn btn-primary" href="{% url 'peticiones' %}" role="button">Enviar Solicitud</a>
+        </article>
+        <!-- fin background -->
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="raw">
+          <div class="col-3" id="bott-1">
+            <h2 class="contacto">
+              Contactanos:</h2>
+            <div  class="contacto">
+              <p>Correo: asdajhd@gmail.com</p>
+              <p>Ubicacion: Av.Cualquiera #856</p>
+              <p>Whatsapp: +56956594565</p>
+            </div>
+              
+          </div>
+    
+          <div class="col-6" id="bott-2">
+            <h3>Quienes Somos:</h3>
+            <p class="quienes">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur placeat maxime delectus a porro provident sint alias? Veniam magnam dolore repellat tempora delectus excepturi est ut itaque? Ex, placeat labore?
+            Quasi minima commodi, quam quia suscipit explicabo, ipsa accusantium quaerat eligendi saepe laboriosam cupiditate eius a sed exercitationem autem? Fuga, cumque. Et culpa voluptates eum ipsum dolores corporis, sapiente deserunt!
+            Laborum praesentium quaerat totam blanditiis numquam vel, earum atque qui expedita fugiat illo, modi illum dignissimos, ipsum doloremque nulla omnis repudiandae alias dolorum nemo repellendus dolores laudantium. Deleniti, eveniet aliquid.</p>
+          </div>
+          <div class="col-3" id="bott-3">
+            <img src="https://picsum.photos/200/200" alt="Error...">
+          </div>
+        </div>
+      </footer>
+    {% bootstrap_javascript jquery='full' %}
+</body>
+</html>

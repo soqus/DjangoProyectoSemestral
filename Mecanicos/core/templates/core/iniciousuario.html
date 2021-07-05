@@ -1,0 +1,41 @@
+{% load static%}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio sesion usuario</title>
+  {%bootstrap_css %}
+  <link rel="stylesheet" href="{% static 'core/css/iniciousuario.css' %}">
+</head>
+<body>
+    <div class="raw">
+        <header class="col ">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'registrousuario' %}">Registrate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'iniciosesion' %}">Iniciar Sesion</a>
+                </li>
+            </ul>
+        </header>
+    </div>
+    
+    <div class="raw">
+        <div class="col-3" id="logo">
+            <img id="logo" src="{% static 'core/img/Gnu.png' %}" alt="Error...">
+        </div>
+    </div>
+    <main>
+        <article>
+    <h1>Usuario</h1>
+    <a class="btn btn-primary" href="{% url 'inciosesion' %}"  role="button">Ingresar</a>
+</article>    
+</main>
+    {% bootstrap_javascript jquery='full' %}
+</body>
+</html>

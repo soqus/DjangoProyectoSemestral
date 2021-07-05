@@ -2,20 +2,117 @@
 {% load bootstrap4 %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rayo Mcqueen</title>
-    {%bootstrap_css %}
-    <link rel="stylesheet" href="{% static 'core/css/index.css' %}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayo Mcqueen</title>
+  {%bootstrap_css %}
+  <link rel="stylesheet" href="{% static 'core/css/index.css' %}">
 </head>
+
+
+<!-- Menu de incio sesion -->
+
 <body>
-    <h1>ASDJKASDP</h1>
+  <div class="raw">
+    <header class="col ">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url 'registrousuario' %}">Registrate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'iniciosesion' %}">Iniciar Sesion</a>
+        </li>
+      </ul>
+    </header>
+  </div>
+  <!-- Logo -->
+  <div class="raw">
+    <div class="col-3" id="logo">
+      <img src="{% static 'core/img/Gnu.png' %}" alt="Error...">
+    </div>
+    <div class="col-9" id="menu">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url 'index' %}">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'trabajos_realizados' %}">trabajos Realizados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Nuestrosmecanicos' %}">Nuestros mecanicos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-    
+  <!-- Carrusel -->
+  <div class="raw">
+    <div class="col">
+      <ol class="carousel-indicators">
+        <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+        <li data-target="#carrusel" data-slide-to="1"></li>
+        <li data-target="#carrusel" data-slide-to="2"></li>
+      </ol>
+      <div id="carrusel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/2500/500" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/2500/500" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/2500/500" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="raw">
+      <div class="col-3" id="bott-1">
+        <h2 class="contacto">
+          Contactanos:</h2>
+        <div class="contacto">
+          <p>Correo: asdajhd@gmail.com</p>
+          <p>Ubicacion: Av.Cualquiera #856</p>
+          <p>Whatsapp: +56956594565</p>
+        </div>
+
+      </div>
+
+      <div class="col-6" id="bott-2">
+        <h3>Quienes Somos:</h3>
+        <p class="quienes">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur placeat maxime delectus a porro provident
+          sint alias? Veniam magnam dolore repellat tempora delectus excepturi est ut itaque? Ex, placeat labore?
+          Quasi minima commodi, quam quia suscipit explicabo, ipsa accusantium quaerat eligendi saepe laboriosam
+          cupiditate eius a sed exercitationem autem? Fuga, cumque. Et culpa voluptates eum ipsum dolores corporis,
+          sapiente deserunt!
+          Laborum praesentium quaerat totam blanditiis numquam vel, earum atque qui expedita fugiat illo, modi illum
+          dignissimos, ipsum doloremque nulla omnis repudiandae alias dolorum nemo repellendus dolores laudantium.
+          Deleniti, eveniet aliquid.</p>
+      </div>
+      <div class="col-3" id="bott-3">
+        <img src="https://picsum.photos/200/200" alt="Error...">
+      </div>
+    </div>
+  </footer>
 
 
-    {% bootstrap_javascript jquery='full' %}
+  {% bootstrap_javascript jquery='full' %}
 </body>
+
 </html>

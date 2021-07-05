@@ -58,26 +58,32 @@ li a:hover{
 #menu{
     padding: 2% 5% 2% 5%;
 }
-/*carrusel*/
 
-#carrusel{
-    padding-top: 1%;
-    padding-bottom: 3%;
+
+/* trabajar aqui */
+
+
+/* centrando main */
+main{
+    
+    text-align: center;
+    padding-left: 659px;
+    padding-right: 750px;
+    padding-bottom: 5px;
+
+}
+h1{
+    text-align: center;
 }
 
-/*Barra buscar*/
-#buscar{
-    padding-top: 3%;
+article{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: #8C7737;
+    
 }
 
-
-
-/* Trabajar aqui */
-
-
-
-
-/*footer*/
 
 /*footer*/
 

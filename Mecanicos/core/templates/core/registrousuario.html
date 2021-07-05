@@ -1,0 +1,75 @@
+{% load static%}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro usuario</title>
+  {%bootstrap_css %}
+  <link rel="stylesheet" href="{% static 'core/css/registro.css' %}">
+</head>
+<body>
+    <!-- menu del inicio -->
+    <div class="raw">
+      <header class="col ">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'iniciosesion' %}">Iniciar sesion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'registrousuario' %}">Registrar</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <!-- capa del centro -->
+    <main>
+      <h1>¿Eres nuevo?</h1>
+      <h1>¡Registrate en 4 simples pasos!</h2>
+        <h2>Nombre:<input type="text" name="nombre" /></h4>
+          <h2>Correo:<input type="text" name="nombre" /></h2>
+          <h2>Contraseña:<input type="password" name="nombre" /></h2>
+          <h2>Confirmar Contraseña:<input type="password" name="nombre" /></h2>
+          <!-- <input type="button" value="botón normal" name="boton1" > -->
+          <a class="btn btn-primary" href="{% url 'mensajeregistroL1' %}" role="button">Registrar</a>
+          <a class="btn btn-primary" href="{% url 'index' %}" role="button">No registrar</a>
+    </main>
+    <!--  fin capa centro -->
+    <!-- cm -->
+    <!-- Footer -->
+    <footer>
+      <div class="raw">
+        <div class="col-3" id="bott-1">
+          <h2 class="contacto">
+            Contactanos:</h2>
+          <div class="contacto">
+            <p>Correo: asdajhd@gmail.com</p>
+            <p>Ubicacion: Av.Cualquiera #856</p>
+            <p>Whatsapp: +56956594565</p>
+          </div>
+  
+        </div>
+  
+        <div class="col-6" id="bott-2">
+          <h3>Quienes Somos:</h3>
+          <p class="quienes">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur placeat maxime delectus a porro provident
+            sint alias? Veniam magnam dolore repellat tempora delectus excepturi est ut itaque? Ex, placeat labore?
+            Quasi minima commodi, quam quia suscipit explicabo, ipsa accusantium quaerat eligendi saepe laboriosam
+            cupiditate eius a sed exercitationem autem? Fuga, cumque. Et culpa voluptates eum ipsum dolores corporis,
+            sapiente deserunt!
+            Laborum praesentium quaerat totam blanditiis numquam vel, earum atque qui expedita fugiat illo, modi illum
+            dignissimos, ipsum doloremque nulla omnis repudiandae alias dolorum nemo repellendus dolores laudantium.
+            Deleniti, eveniet aliquid.</p>
+        </div>
+        <div class="col-3" id="bott-3">
+          <img src="https://picsum.photos/200/200" alt="Error...">
+        </div>
+      </div>
+    </footer>
+    {% bootstrap_javascript jquery='full' %}
+</body>
+</html>

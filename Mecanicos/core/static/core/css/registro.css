@@ -1,4 +1,4 @@
-*{
+/*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -58,26 +58,24 @@ li a:hover{
 #menu{
     padding: 2% 5% 2% 5%;
 }
-/*carrusel*/
 
-#carrusel{
-    padding-top: 1%;
-    padding-bottom: 3%;
-}
+/* trabajar aqui  */
 
-/*Barra buscar*/
-#buscar{
-    padding-top: 3%;
-}
+ /*  krosh */
+ 
+main{
+    padding-top: 80px;
+    text-align: center;
+    width: 420px;
+    margin: 0 auto;
+    padding-bottom: 90px;
 
-
-
-/* Trabajar aqui */
+ }
 
 
 
+/*  fin krosh */
 
-/*footer*/
 
 /*footer*/
 
